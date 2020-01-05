@@ -1,0 +1,14 @@
+Info I need:
+
+contact {
+    company address
+    phone number
+    email
+}
+
+pricing
+location/range
+
+pictures
+about
+logo
