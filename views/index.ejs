@@ -24,28 +24,43 @@
                 align-items:center;
                 width:100vw;
             } #call {
+
                 height:5vh;
                 font-family: 'Oxygen', sans-serif;
                 font-size:120%;
                 display:flex;
                 justify-content:center;
                 align-items:center;
-            }.buzzWords {
+            } img[src='freeEstimate.jpg'] {
+                height:10vh;
+                width:auto;
+            }
+            
+            .buzzWords {
                 display:flex;
                 justify-content:space-evenly;
                 align-items:center;
                 background:white;
                 height:8vh;
+                width:99vw;
             } article {
                 width:fit-content;
                 text-align:center;
                 background:white;
-            } img {
+            } 
+            figure {
+                font-weight:bold;
+                background:black;
+                color:#05cdff;
+                text-align:center;
+                margin-top:1vh;
+                margin-bottom:1vh;
+                font-family: 'Oxygen', sans-serif;
+            }
+            img {
                 margin:auto;
                 /* width:100%; */
                 height:40vh;
-                margin-top:1vh;
-                margin-bottom:1vh;
             } 
 
             article {
@@ -63,7 +78,28 @@
             } .buzzListItem {
                 background:white;
                 width:99%;
-            } #footer {
+            } #beforeAfter {
+                background:white;
+                color:black;
+            } #beforeAfterBanner {
+                display:flex;
+                justify-content:space-around;
+                
+            }
+            .beforeAfter {
+                /* background:black;
+                color:#05cdff; */
+                padding:1%;
+                width:fit-content;
+                font-family:'Asap', sans-serif;
+            }
+            #beforeAfter img {
+                width:40vw;
+                margin:0;
+            }
+            
+            
+            #footer {
                 background:white;
                 position:fixed;
                 bottom:0;
@@ -78,9 +114,7 @@
                 /* text-align:center; */
                 /* background:#05cdff; */
                 width:100%;
-            } #coolPool {
-                margin-bottom:2vh;
-            }
+            } 
             @media only screen and (min-width:900px) {
                 img {
                     margin-top:1vh;
@@ -101,12 +135,12 @@
         </h1>
 
         <section id='call'>
-            Call (832)594-4404
+            <div>Call (832)594-4404</div>
         </section>
         <section class='buzzWords'>
-            <article>
-                Free Estimates!
-            </article>
+                <article>
+                    Free Estimates!
+                </article>
             <article>
                 Weekly Services
             </article>
@@ -114,8 +148,11 @@
                 Chemical Maintenance
             </article>
         </section>
-
-        <img src='prestonPool.png'>
+        <figure>
+            <img src='kid.png'>
+            <figcaption>Basic Plaster</figcaption>
+        </figure>
+        
 
         <section id='buzzList'>
                 <article class='buzzListItem'>
@@ -128,7 +165,22 @@
             Servicing Greater Houston
           </article>
         </section>
-        <img src='coolPool.jpg' id='coolPool'>
+        <figure>
+            <img src='pebble.png' id='coolPool'>
+            <figcaption>Pebble Tech</figcaption>
+        </figure>
+
+        <section id='beforeAfter'>
+            <div id='beforeAfterBanner'>
+                <div class='beforeAfter'>Before</div>
+                <div class='beforeAfter'>After!</div>
+            </div>
+            <div>
+                    <img src='before.jpg'>
+                    <img src='after.jpg'>
+            </div>
+        </section>
+
         <section id='footer'>
             <article class='contactItem'>
                 (832)594-4404
@@ -140,6 +192,7 @@
                 PO Box 800394 Houston, TX 77280
             </article>
         </section>
+        
 
     </body>
     <script>
