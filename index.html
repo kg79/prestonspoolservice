@@ -22,14 +22,18 @@
                 display:flex;
                 justify-content:center;
                 align-items:center;
-                width:99vw;
+                width:100vw;
             } #call {
+
                 height:5vh;
                 font-family: 'Oxygen', sans-serif;
                 font-size:120%;
                 display:flex;
                 justify-content:center;
                 align-items:center;
+            } img[src='freeEstimate.jpg'] {
+                height:10vh;
+                width:auto;
             }
             
             .buzzWords {
@@ -39,7 +43,6 @@
                 background:white;
                 height:8vh;
                 width:99vw;
-                border:solid .1em black;
             } article {
                 width:fit-content;
                 text-align:center;
@@ -53,17 +56,11 @@
                 margin-top:1vh;
                 margin-bottom:1vh;
                 font-family: 'Oxygen', sans-serif;
-                padding:1%;
-                border-radius:.9em;
-            }
-            #plasterKid {
-                /* border:solid white 1em; */
             }
             img {
-                margin:0;
+                margin:auto;
+                /* width:100%; */
                 height:40vh;
-                position:relative;
-                bottom:.9vh;
             } 
 
             article {
@@ -76,25 +73,22 @@
                 align-items:center;
                 height:10vh;
                 margin-bottom:1vh;
-                border:solid .1em black;
+                /* background:#05cdff; */
                 background:white;
             } .buzzListItem {
-                width:fit-content;
-                font-size:90%;
-            } 
-            
-            #beforeAfter {
+                background:white;
+                width:99%;
+            } #beforeAfter {
                 background:white;
                 color:black;
-                border:solid .4em black;
-                margin-bottom:13vh;
             } #beforeAfterBanner {
                 display:flex;
                 justify-content:space-around;
                 
             }
             .beforeAfter {
-                
+                /* background:black;
+                color:#05cdff; */
                 padding:1%;
                 width:fit-content;
                 font-family:'Asap', sans-serif;
@@ -102,12 +96,6 @@
             #beforeAfter img {
                 width:40vw;
                 margin:0;
-            } #picContainer {
-                margin:0;
-                padding:0;
-            } .beforeAfterImages {
-                position:relative;
-                top:.62vh;
             }
             
             
@@ -115,7 +103,7 @@
                 background:white;
                 position:fixed;
                 bottom:0;
-                width:99vw;
+                width:100%;
                 height:12vh;
                 display:flex;
                 flex-direction:column;
@@ -123,16 +111,10 @@
                 justify-content: center;
                 line-height:1.4em;
             } .contactItem {
-                width:17em;
-                /* border-top:solid black 2px; */
-                font-size:115%;
-                height:100%;
-                line-height:1.2em;
-            } #topContactItem {
-                border:none;
-                
-            }
-
+                /* text-align:center; */
+                /* background:#05cdff; */
+                width:100%;
+            } 
             @media only screen and (min-width:900px) {
                 img {
                     margin-top:1vh;
@@ -142,8 +124,6 @@
                     width:70vw;
                 } #buzzList {
                     width:70vw;
-                } .buzzListItem {
-                    font-size:100%;
                 }
             }
         </style>
@@ -157,7 +137,6 @@
         <section id='call'>
             <div>Call (832)594-4404</div>
         </section>
-
         <section class='buzzWords'>
                 <article>
                     Free Estimates!
@@ -169,25 +148,23 @@
                 Chemical Maintenance
             </article>
         </section>
-
-        <figure id='plasterKid'>
+        <figure>
             <img src='kid.png'>
             <figcaption>Basic Plaster</figcaption>
         </figure>
         
 
         <section id='buzzList'>
-            <article class='buzzListItem'>
-                Veteran and Senior Discounts
-            </article>
+                <article class='buzzListItem'>
+                        Veteran and Senior Discounts
+                        </article>
             <article class='buzzListItem'>
                 Equipment Repairs
             </article>
-            <article class='buzzListItem'>
-                Servicing Greater Houston
-            </article>
+          <article class='buzzListItem'>
+            Servicing Greater Houston
+          </article>
         </section>
-        
         <figure>
             <img src='pebble.png' id='coolPool'>
             <figcaption>Pebble Tech</figcaption>
@@ -198,14 +175,14 @@
                 <div class='beforeAfter'>Before</div>
                 <div class='beforeAfter'>After!</div>
             </div>
-            <div id='picContainer'>
-                <img class='beforeAfterImages' src='before.jpg'>
-                <img class='beforeAfterImages' src='after.jpg'>
+            <div>
+                    <img src='before.jpg'>
+                    <img src='after.jpg'>
             </div>
         </section>
 
         <section id='footer'>
-            <article class='contactItem' id='topContactItem'>
+            <article class='contactItem'>
                 (832)594-4404
             </article>
             <article class='contactItem'>

@@ -1,4 +1,5 @@
-const IP = '192.168.1.9';
+// const IP = '192.168.1.9';
+const IP = 'localhost';
 const express = require('express');
 const app = express();
 const path = require('path');
