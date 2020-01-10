@@ -3,10 +3,10 @@ const IP = 'localhost';
 const express = require('express');
 const app = express();
 const path = require('path');
-const ejs = require('ejs');
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '/views'));
+// const ejs = require('ejs');
+// app.set('view engine', 'ejs');
+// app.set('views', path.join(__dirname, '/views'));
 
 const serveStatic = require('serve-static');
 app.use(serveStatic(path.join(__dirname, 'public')));
