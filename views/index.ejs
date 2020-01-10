@@ -22,7 +22,7 @@
                 display:flex;
                 justify-content:center;
                 align-items:center;
-                width:99vw;
+                width:99.1vw;
             } #call {
                 height:5vh;
                 font-family: 'Oxygen', sans-serif;
@@ -56,14 +56,12 @@
                 padding:1%;
                 border-radius:.9em;
             }
-            #plasterKid {
-                /* border:solid white 1em; */
-            }
+            .plasterPebblePics {
+                border-radius:.9em .9em .3em .3em;            }
             img {
                 margin:0;
                 height:40vh;
                 position:relative;
-                bottom:.9vh;
             } 
 
             article {
@@ -91,14 +89,23 @@
             } #beforeAfterBanner {
                 display:flex;
                 justify-content:space-around;
-                
+                align-items:center;
             }
             .beforeAfter {
                 
                 padding:1%;
                 width:fit-content;
                 font-family:'Asap', sans-serif;
+                font-weight:bold;
+                margin-bottom:-.6vh;
+            } #before {
+                
+                text-shadow: -.125em .125em #34e07e;
+                
+            } #after {
+                text-shadow: .125em .125em #25c4f5;
             }
+
             #beforeAfter img {
                 width:40vw;
                 margin:0;
@@ -107,24 +114,25 @@
                 padding:0;
             } .beforeAfterImages {
                 position:relative;
-                top:.62vh;
+                top:.95vh;
             }
             
             
             #footer {
-                background:white;
+                background:#000;
                 position:fixed;
                 bottom:0;
-                width:99vw;
+                width:100vw;
                 height:12vh;
                 display:flex;
                 flex-direction:column;
                 align-items:center;
                 justify-content: center;
                 line-height:1.4em;
+                color:#05cdff;
             } .contactItem {
                 width:17em;
-                /* border-top:solid black 2px; */
+                background:black;
                 font-size:115%;
                 height:100%;
                 line-height:1.2em;
@@ -144,6 +152,8 @@
                     width:70vw;
                 } .buzzListItem {
                     font-size:100%;
+                } .beforeAfter {
+                    font-size:120%;
                 }
             }
         </style>
@@ -171,7 +181,7 @@
         </section>
 
         <figure id='plasterKid'>
-            <img src='kid.png'>
+            <img src='kid.png' class='plasterPebblePics'>
             <figcaption>Basic Plaster</figcaption>
         </figure>
         
@@ -189,14 +199,14 @@
         </section>
         
         <figure>
-            <img src='pebble.png' id='coolPool'>
+            <img src='pebble.png' class='plasterPebblePics'>
             <figcaption>Pebble Tech</figcaption>
         </figure>
 
         <section id='beforeAfter'>
             <div id='beforeAfterBanner'>
-                <div class='beforeAfter'>Before</div>
-                <div class='beforeAfter'>After!</div>
+                <div class='beforeAfter' id='before'>Before</div>
+                <div class='beforeAfter' id='after'>After!</div>
             </div>
             <div id='picContainer'>
                 <img class='beforeAfterImages' src='before.jpg'>
