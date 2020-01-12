@@ -30,71 +30,68 @@ h1 {
 } h2 {
     background:var(--opposite-of-afternoon);
     text-align:center;
-    margin:0;
+    margin:auto;
     width:100%;
     font-family:'Seymour One', sans-serif;
     color:white;
+    border:solid .1em black;
+    border-radius:1em;
 }
-
 #buzz {
-    background:black;
+    background:var(--true-blue);
     color:white;
     width:100%;
-}
-
-.buzzWords {
     display:flex;
     justify-content:space-evenly;
-    align-items:center;
-    background:white;
-    height:8vh;
-    width:99vw;
-    border:solid .1em black;
-} article {
-    width:fit-content;
-    text-align:center;
-    background:white;
-} 
-figure {
+} #freeEstimate {
+    width:9em;
+    height:auto;
+} #buzzWords {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    font-family:'Asap', sans-serif;
+} .buzzWord {
+    background:var(--true-blue);
+    color:black;
+}
+
+
+#plasterPebblePictures {
+    display:flex;
+    justify-content:center;
+    width:97vw;
+    /* background:lime; */
+} .figure {
     font-weight:bold;
-    background:black;
-    color:var(--true-blue);
+    background:var(--opposite-of-afternoon);
+    color:white;
     text-align:center;
-    margin-top:1vh;
+    margin-top:1vh; 
     margin-bottom:1vh;
     font-family: 'Oxygen', sans-serif;
     padding:1%;
     border-radius:.9em;
+    text-align:center;
+} .plasterPebblePics {
+    border-radius:.9em .9em .3em .3em;
+    height:10em;
+    width:auto;
+} img[src='plaster-pool-cleaning.png'] {
+    border-radius:.9em 0em 0em .9em;
+} img[src='pebble-tech-pool-maintenance.png'] {
+    border-radius:0em .9em .9em 0em;
+} #plasterFigure {
+    border-radius:.9em 0em 0em .9em;
+} #pebbleFigure {
+    border-radius:0em .9em .9em 0em;
 }
-.plasterPebblePics {
-    border-radius:.9em .9em .3em .3em;            }
-img {
-    margin:0;
-    height:40vh;
-    position:relative;
-} 
 
-article {
-    font-family:'Asap', sans-serif;
-} #buzzList {
-    margin:0;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-    align-items:center;
-    height:10vh;
-    margin-bottom:1vh;
-    border:solid .1em black;
-    background:white;
-} .buzzListItem {
-    width:fit-content;
-    font-size:90%;
-} 
 
 #beforeAfter {
-    background:white;
-    color:black;
-    border:solid .4em black;
+    background:var(--opposite-of-afternoon);
+    color:white;
+    border:solid .4em var(--opposite-of-afternoon);
     margin-bottom:13vh;
 } #beforeAfterBanner {
     display:flex;
@@ -102,34 +99,30 @@ article {
     align-items:center;
 }
 .beforeAfter {
-    
     padding:1%;
     width:fit-content;
     font-family:'Asap', sans-serif;
     font-weight:bold;
     margin-bottom:-.6vh;
-} #before {
-    
-    text-shadow: -.125em .125em #34e07e;
-    
-} #after {
-    text-shadow: .125em .125em #25c4f5;
+} #before, #after {
+    color:white;
 }
 
 #beforeAfter img {
     width:40vw;
     margin:0;
-} #picContainer {
+}
+  #picContainer {
     margin:0;
     padding:0;
 } .beforeAfterImages {
-    position:relative;
-    top:.95vh;
-}
+    /* height:10em; */
+} 
 
 
 #footer {
-    background:#000;
+
+    background:var(--true-blue);
     position:fixed;
     bottom:0;
     width:100%;
@@ -141,22 +134,24 @@ article {
     line-height:1.4em;
     color:var(--true-blue);
 } .contactItem {
+    font-family: 'Oxygen', sans-serif;
+    font-weight:bold;
+    text-align:center;
     width:17em;
-    background:black;
+    color:black;
     font-size:115%;
     height:100%;
     line-height:1.2em;
-} #topContactItem {
-    border:none;
-    
-}
+} 
 
 @media only screen and (min-width:900px) {
-    img {
-        margin-top:1vh;
-        width:50vw;
-        height:auto;
-    }.buzzWords {
+    .plasterPebblePics {
+        height:20em;
+    } .beforeAfterImages {
+      width:10vw;
+      height:auto;
+    }
+    .buzzWords { 
         width:70vw;
     } #buzzList {
         width:70vw;
