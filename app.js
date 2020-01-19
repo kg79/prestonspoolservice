@@ -1,3 +1,4 @@
+const IP = '192.168.1.9';
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -17,7 +18,7 @@ app.get('/favicon.ico', (req, res) => {
 })
 
 if (module === require.main) {
-  const server = app.listen(process.env.PORT || 8080, () => {
+  const server = app.listen(process.env.PORT || 8081, IP, () => {
     const port = server.address().port;
     console.log(`:${port}`);
   });

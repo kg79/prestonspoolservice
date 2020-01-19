@@ -87,12 +87,20 @@ h1 {
     border-radius:0em .9em .9em 0em;
 }
 
+#blurb {
+    padding:1%;
+
+} .blurbContents {
+    text-indent:2em;
+}
+
 
 #beforeAfter {
     background:var(--opposite-of-afternoon);
     color:white;
     border:solid .4em var(--opposite-of-afternoon);
     margin-bottom:13vh;
+    border-radius:9px;
 } #beforeAfterBanner {
     display:flex;
     justify-content:space-around;
@@ -147,17 +155,27 @@ h1 {
 @media only screen and (min-width:900px) {
     .plasterPebblePics {
         height:20em;
-    } .beforeAfterImages {
-      width:10vw;
-      height:auto;
     }
+
     .buzzWords { 
         width:70vw;
     } #buzzList {
         width:70vw;
     } .buzzListItem {
         font-size:100%;
-    } .beforeAfter {
-        font-size:120%;
     }
+
+    #blurb {
+        width:79vw;
+        margin:1vw;
+    } .blurbContents {
+        
+    }
+    
+    .beforeAfter {
+        font-size:120%;
+    } .beforeAfterImages {
+        width:10vw;
+        height:auto;
+      }
 }
